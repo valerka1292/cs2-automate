@@ -12,10 +12,12 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-### 2. Установка необходимых инструментов
+### 2. Установка необходимых инструментов (все выполняется в корневой директории (где лежит код и readme))
 
 Установите CMake и Visual Studio Build Tools через Chocolatey:
-
+```cmd
+vs_buildtools.exe --norestart --passive --downloadThenInstall --includeRecommended --add Microsoft.VisualStudio.Workload.NativeDesktop --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Workload.MSBuildTools
+```
 ```powershell
 choco install cmake -y
 choco install visualstudio2022buildtools -y
