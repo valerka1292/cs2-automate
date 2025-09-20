@@ -39,7 +39,6 @@ CTestTestfile.cmake
 _deps
 
 # Executables
-*.exe
 *.out
 *.app
 
