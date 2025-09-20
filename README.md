@@ -23,6 +23,7 @@ choco install cmake -y
 choco install visualstudio2022buildtools -y
 choco install visualstudio2022-workload-vctools -y
 ```
+*** НЕ ЗАБУДЬТЕ ПЕРЕЗАПУСТИТЬ КОМАНДНУЮ СТРОКУ ИЛИ ПОВЕРШЕЛЛ ПЕРЕД СБОРКОЙ ЧТО БЫ ПЕРЕМЕННЫЕ СРЕДЫ ОБНОВИЛИСЬ И КОМПИЛЯТОР УВИДЕЛ НОВЫЕ ПУТИ
 
 ### 3. Сборка проекта
 
